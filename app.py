@@ -11,11 +11,11 @@ def censor(text):
     return censored
 
 app = Flask(__name__)
-app.config["DEBUG"] = True
+# app.config["DEBUG"] = True
 
 @app.route('/', methods=['GET'])
 def index():
-   return redirect("")
+   return redirect("https://documenter.getpostman.com/view/9310664/SW18waDy?version=latest")
 
 
 @app.route('/', methods=['POST'])
@@ -26,4 +26,4 @@ def censortext():
     return jsonify(censored_text=censored_text)
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
