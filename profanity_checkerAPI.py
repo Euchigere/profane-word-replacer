@@ -18,7 +18,7 @@ def index():
    return redirect("")
 
 
-@app.route('/', method=['POST'])
+@app.route('/', methods=['POST'])
 def censortext():
     ''' Returns censored text '''
     text = request.form['text']
