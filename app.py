@@ -15,7 +15,7 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def index():
-   return redirect("https://documenter.getpostman.com/view/9310664/SW18waDy?version=latest")
+   return redirect("https://documenter.getpostman.com/view/9431330/SW18wvPf?version=latest#overview")
 
 
 @app.route('/', methods=['POST'])
